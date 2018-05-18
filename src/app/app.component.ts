@@ -40,10 +40,12 @@ export class AppComponent {
 
   openFilm(film) {
     this.filmDetails = film;
+    document.body.classList.add('active');
     this.renderFilmScreen = true;
   }
 
   closeFilm() {
+    document.body.classList.remove('active');
     this.renderFilmScreen = false;
   }
 }

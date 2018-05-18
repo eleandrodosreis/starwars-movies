@@ -126,3 +126,54 @@ header h2 {
     color: #FFF;
     cursor: pointer;
 }
+@media (min-width:768px) and (max-width:991px) {
+    .movies {width: 100%;padding: 20px 0;}
+    .movies_item {
+        width: 243px;
+        height: 350px;
+    }
+}
+@media (max-width:767px) {
+    header h2 {
+        font-size: 30px;
+    }
+    .movies {width: 100%;padding: 20px 0;}
+    .movies_item {
+        width: 46.5%;
+        height: 440px;
+    }
+    .movie_details_close {
+        z-index: 1000;
+    }
+}
+@media (max-width:480px) {
+    header h2 {
+        font-size: 30px;
+    }
+    .movies {width: 100%;padding: 20px 0;}
+    .movies_item {
+        width: 46.5%;
+        height: 270px;
+    }
+    .movie_details_image {
+        width: 250px;
+        height: 360px;
+        position: relative;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        transform: unset;
+    }
+    .movie_details_content {
+        width: 80%;
+        margin: 30px auto;
+        height: auto;
+        position: relative;
+        top: 0;
+        right: 0;
+        transform: unset;
+    }
+    .movie_details {
+        overflow-y: scroll;
+    }
+}
