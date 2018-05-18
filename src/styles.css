@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+/*reset*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+a {
+    list-style: none;
+    text-decoration: none;
+}
+ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+body {
+    background-color:#222;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
