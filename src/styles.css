@@ -22,6 +22,32 @@ body {
     margin: 0 auto;
     position: relative;
 }
+.loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+    opacity: 0;
+    transition: all 0.4s;
+    z-index: -1;
+}
+.loader_content {
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+}
+.loader.active {
+    opacity: 1;
+    z-index: 10;
+}
 @media (min-width:768px) and (max-width:991px) {
     .container {width:90%;}
 }

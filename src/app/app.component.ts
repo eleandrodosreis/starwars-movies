@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'Biblioteca';
   films: any = Array();
   renderFilmScreen: boolean = false;
+  renderLoader: boolean = false;
   filmDetails: any = Array();
 
   constructor(
@@ -22,10 +23,12 @@ export class AppComponent {
   }
 
   getFilms() {
+    this.renderLoader = true;
     this.service.getFilms().subscribe(
       data => {
         this.films = data;
         this.orderFilms();
+        this.renderLoader = false;
       });
   }
 
